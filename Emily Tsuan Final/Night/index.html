@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Final Project: (Super) Paper Mario </title>
+	<link rel="stylesheet" href="styles.css">
+  </head>
+  
+  <body>
+    <!-- SVG element goes around all SVG content -->
+	<!--height and width of svg image-->
+	<svg width="1600" height="850">    
+	
+	<!-- grass pattern -->
+	<defs>
+	<pattern id="grass" x="0" y="0" patternUnits="userSpaceOnUse" width="40" height="73">
+      <image x="0" y="0" xlink:href="grassPattern.png" width="40" height="73"></image>
+    </pattern>
+	</defs>
+	<!-- dirt pattern -->
+	<defs>
+	<pattern id="dirt" x="0" y="0" patternUnits="userSpaceOnUse" width="200" height="58">
+      <image x="0" y="0" xlink:href="dirtPattern.png" width="200" height="58"></image>
+    </pattern>
+	</defs>
+	
+	<!-- Secret Rectangle platform -->
+	
+	<g id="platform3">
+	<rect x="0" y="575" width="1700" height="2500" fill ="url(#grass)"
+	style="stroke:black;stroke-width:3;opacity:1.0" />
+	</g>
+	
+	<!-- Secret Path platform -->
+	<g id= "pathway"> <polygon points="600,575 250,1200 1300,1200 1050,575" fill="url(#dirt)"
+	style="stroke:black;stroke-width:3; opacity:1.0" />
+	</g>
+	
+	<!-- rectangle "trees" -->
+	  <g id="tree1">
+	  <rect x="325" y="300" rx="20" ry="20" width="25" height="400"
+	  style="fill:#392714;stroke:black;stroke-width:5;opacity:1.0" />	  
+	  
+	  <rect x="121" y="240" rx="20" ry="20" width="420" height="130"
+	  style="fill:#1a3300;stroke:black;stroke-width:5;opacity:0.7" />
+	  
+	  
+	  <rect x="200" y="300" rx="20" ry="20" width="300" height="150"
+	  style="fill:#003300;stroke:black;stroke-width:5;opacity:0.5" />
+
+	  <rect x="150" y="150" rx="20" ry="20" width="150" height="90"
+	  style="fill:1a3300;stroke:black;stroke-width:5;opacity:0.5" />
+	  
+	  <rect x="225" y="200" rx="20" ry="20" width="75" height="200"
+	  style="fill:#446600;stroke:black;stroke-width:5;opacity:0.5" />
+	  
+	  <rect x="240" y="120" rx="20" ry="20" width="250" height="220"
+	  style="fill:#003300;stroke:black;stroke-width:5;opacity:0.5" />
+	  
+	  <rect x="255" y="100" rx="20" ry="20" width="200" height="200"
+	  style="fill:#446600;stroke:black;stroke-width:5;opacity:0.7" />
+	  
+	  <rect x="375" y="75" rx="20" ry="20" width="40" height="320"
+	  style="fill:#003300;stroke:black;stroke-width:5;opacity:0.7" />
+	   
+
+      </g>
+	
+	<!--Rectangle Platform-->
+
+
+	<g id="platform1">
+	<rect x="0" y="575" width="2500" height="700" fill="url(#dirt)"
+	style="stroke:black;stroke-width:3;opacity:1.0" />
+	</g>
+	<g id="platform2">
+	  <rect x="0" y="575" width="2500" height="25" fill ="url(#grass)"
+	  style="stroke:black;stroke-width:3;opacity:1.0" />
+	</g>	
+
+
+	
+	<!--Paper Mario-->	
+	<image id="marioImage" x="600" y="460" width="75" height="135"
+     xlink:href="marioStand.png" 
+	 />
+	 
+	<!--Paper Mario-->	
+	<image id="marioImageBack" x="1600" y="500" width="75" height="135"
+     xlink:href="marioFlip.png" 
+	 />
+	
+	<!--Merlon-->	
+	<image id="merlonImage" x="800" y="200" width="100" height="100"
+     xlink:href="paperLuigi.png" 
+	 />
+	 
+	 <!--Peach-->	
+	<image id="peachImage" x="1000" y="200" width="150" height="200" />
+     <!-- xlink:href="peach.png"  -->
+	
+	
+	<!--Yoshi egg-->
+	<image id="yoshiEgg" x="800" y="520" width="100" height="100"	
+	xlink:href="yoshiEgg.png"/>
+	
+	<!--Yoshis-->	
+	<image id="yoshiImage" x="1800" y="500" width="100" height="100"/>	
+	<!-- xlink:href="yoshi-1.png"  -->
+	  
+ Your browser does not support inline SVG. Sorry.
+    </svg>
+	
+	<audio autoplay loop>
+	<source src="greatBogglyTree.mp3" type="audio/mpeg">
+	Your browser does not support the audio element.
+	</audio>
+	
+	<script src="changing-time.js"></script>
+	<script src="changing-yoshi.js"></script>
+	<script src="changing-background.js"></script>
+	<script src="changing-princess.js"></script>
+  </body>
+</html>

@@ -1,0 +1,196 @@
+     .day {
+	  background-image: url("dayBackground.png");
+	  background-repeat: repeat-x;
+	  }
+      .night {
+	  background-image: url("nightBack2.png");
+	  background-repeat: repeat-x;
+	  }
+	
+	svg {
+	position: absolute;
+	margin:0; 
+	padding:0;
+	}
+	
+	@keyframes floating {
+    from {-webkit-transform:translate(0, 0px);
+	-moz-transform:translate(0, 0px);}
+    65% {-webkit-transform:translate(0, 15px);
+	-moz-transform:translate(0, 15px);}
+    to {-webkit-transform: translate(0, -0px);
+	-moz-transform: translate(0, -0px);}   
+	}
+	
+	@-moz-keyframes floating {
+	from {-moz-transform:translate(0, 0px);}
+    65% {-moz-transform:translate(0, 15px);}
+    to {-moz-transform: translate(0, -0px);}   
+	}
+	
+	#peachImage, #merlonImage{
+	float: left;
+    -webkit-animation-name: floating;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: floating;
+    -moz-animation-duration: 3s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+	}
+	
+	@keyframes flatten {
+	0% {-webkit-transform: rotateY(0deg);
+	-moz-transform: rotateY(0deg);
+	}
+	100% {-webkit-transform: rotateY(-90deg);
+	-moz-transform: rotateY(-90deg);}
+    }
+	@-moz-keyframes flatten {
+	0% {-moz-transform: rotateY(0deg);
+	}
+	100% {-moz-transform: rotateY(-90deg);}
+    }
+	
+	@keyframes rotato {
+	0% {-webkit-transform: rotateX(0deg);
+	-moz-transform: rotateX(0deg);}
+	100% {-webkit-transform: rotateX(60deg);
+	-moz-transform: rotateX(60deg);}
+	}
+	
+	@keyframes rotating {
+	0% {-webkit-transform: rotateY(0deg);
+	-moz-transform: rotateY(0deg);}
+	100% {-webkit-transform: rotateY(75deg) rotateZ(-15deg) translate(200px, 100px) translateZ(60px);
+	-moz-transform: rotateY(75deg) rotateZ(-15deg) translate(200px, 100px) translateZ(60px);}
+	}
+	
+	@keyframes yoshiRun {
+	0% {-webkit-transform: translate(0px, 0px);
+	-moz-transform: translate(0px, 0px)}
+	100% {-webkit-transform: translate(-1000px, 80px);
+	-moz-transform: translate(-1000px, 80px)}
+	}
+	
+	@keyframes appear {
+	0% {-webkit-transform: translate(0px, 0px);
+	-moz-transform: translate(0px, 0px)}
+	100% {-webkit-transform: translate(-900px, 0px);
+	-moz-transform: translate(-900px, 0px);}
+	}
+	
+	@-moz-keyframes rotato {
+	0% {-moz-transform: rotateX(0deg);}
+	100% {-moz-transform: rotateX(60deg);}
+	}
+	
+	@-moz-keyframes rotating {
+	0% {-moz-transform: rotateY(0deg);}
+	100% {-moz-transform: rotateY(75deg) rotateZ(-15deg) translate(200px, 100px) translateZ(60px);}
+	}
+	
+	@-moz-keyframes yoshiRun {
+	0% {-moz-transform: translate(0px, 0px)}
+	100% {-moz-transform: translate(-1000px, 80px)}
+	}
+	
+	@-moz-keyframes appear {
+	0% {-moz-transform: translate(0px, 0px)}
+	100% {-moz-transform: translate(-900px, 0px);}
+	}
+	
+	#tree1 {
+	-webkit-animation-name: rotating;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-play-state: paused;
+	-webkit-transform-origin: 40%;
+	-moz-animation-name: rotating;
+	-moz-animation-duration: 3s;
+	-moz-animation-play-state: paused;
+	-moz-transform-origin: 40%;
+	}
+	
+	#tree1.running {
+	-webkit-animation-play-state: running;
+	-moz-animation-play-state: running;
+	}
+	
+	#marioImageBack {
+	-webkit-animation-name: appear; 
+	-webkit-animation-duration: 3s;
+	-webkit-animation-play-state: paused;
+	-moz-animation-name: appear; 
+	-moz-animation-duration: 3s;
+	-moz-animation-play-state: paused;
+	}
+	
+	#marioImageBack.running {
+	-webkit-animation-play-state: running;
+	-moz-animation-play-state: running;
+	}
+	
+	#yoshiImage {
+	-webkit-animation-name: yoshiRun;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-play-state: paused;
+	-moz-animation-name: yoshiRun;
+	-moz-animation-duration: 3s;
+	-moz-animation-play-state: paused;
+	}
+	
+	#yoshiImage.running {
+	-webkit-animation-play-state: running;
+	-moz-animation-play-state: running;
+	}
+	
+	#platform3, #pathway{
+	-webkit-animation-name: rotato;
+	-webkit-animation-duration: 5s; 
+	-webkit-transform-origin: 0 0%;
+	-webkit-animation-play-state: paused;
+	-moz-animation-name: rotato;
+	-moz-animation-duration: 5s; 
+	-moz-transform-origin: 0 0%;
+	-moz-animation-play-state: paused;
+	}
+	
+	#platform1, #platform2{
+	-webkit-animation-name: flatten;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-play-state: paused;
+	-moz-animation-name: flatten;
+	-moz-animation-duration: 3s;
+	-moz-animation-play-state: paused;
+	}
+	
+	#marioImage, #yoshiEgg{
+	-webkit-animation-name: flatten;
+	-webkit-animation-duration: 3s;
+	-webkit-transform-origin: 40%;
+	-webkit-animation-play-state: paused;
+	-moz-animation-name: flatten;
+	-moz-animation-duration: 3s;
+	-moz-transform-origin: 40%;
+	-moz-animation-play-state: paused;
+	}
+	
+	#platform3.running, #pathway.running {
+	-webkit-animation-play-state: running;
+	-moz-animation-play-state: running;
+	}
+	
+	#platform1.running, #platform2.running {
+	-webkit-animation-play-state: running;
+	-moz-animation-play-state: running;
+	}
+	
+	#marioImage.running, #yoshiEgg.running {
+	-webkit-animation-play-state: running;
+	-moz-animation-play-state: running;
+	}
+	
+	
